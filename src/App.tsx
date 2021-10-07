@@ -2,21 +2,21 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const firstName: string = "Sumit Singh";
+
+  // tuple
+  const aTuple: [string, number] = ['dummyString', 23];
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          The value {firstName} is of type {typeof firstName} type!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>
+          The value {aTuple} is of type {typeof aTuple} type!
+        </p>
       </header>
     </div>
   );
