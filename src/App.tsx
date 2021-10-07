@@ -1,22 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Message from './components/Message';
+import User from './components/User';
 
 function App() {
-  const firstName: string = "Sumit Singh";
-
-  // tuple
-  const aTuple: [string, number] = ['dummyString', 23];
-
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          The value {firstName} is of type {typeof firstName} type!
-        </p>
-        <p>
-          The value {aTuple} is of type {typeof aTuple} type!
-        </p>
+        <Message message='basic prop' />
+        <User name='Sumit' age={24} isAdmin={false} />
       </header>
     </div>
   );
